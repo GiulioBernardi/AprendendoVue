@@ -40,11 +40,11 @@ export default {
   }
 
   .lista-fotos{
-    list-style: none
+    list-style: none;
   }
 
   .lista-fotos .lista-fotos-item{
-    display: inline-block
+    display: inline-block;
   }
 
 </style>
