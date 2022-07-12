@@ -33,21 +33,46 @@ export default {
 </script>
 
 <style>
-.corpo {
-  font-family: Helvetica, sans- serif;
-  width: 96%;
-  margin: 0, auto;
-}
 
-.centralizado {
-  text-align: center;
-}
+  .centralizado {
+    text-align: center;
+  }
 
-.lista-fotos {
-  list-style: none;
-}
+  .corpo {
+    font-family: Helvetica, sans-serif;
+    margin: 0 auto;
+    width: 96%;
+  }
 
-.lista-fotos .lista-fotos-item {
-  display: inline-block;
-}
+  .lista-fotos {
+    list-style: none;
+  }
+
+  .lista-fotos .lista-fotos-item {
+    display: inline-block;
+  }
+
+  /* estilo do painel */ 
+
+   .painel {
+    padding: 0 auto;
+    border: solid 2px grey;
+    display: inline-block;
+    margin: 5px;
+    box-shadow: 5px 5px 10px grey;
+    width: 200px;
+    height: 100%;
+    vertical-align: top;
+    text-align: center;
+  }
+
+  .painel .painel-titulo {
+    text-align: center;
+    border: solid 2px;
+    background: lightblue;
+    margin: 0 0 15px 0;
+    padding: 10px;
+    text-transform: uppercase;
+  }
+
 </style>
