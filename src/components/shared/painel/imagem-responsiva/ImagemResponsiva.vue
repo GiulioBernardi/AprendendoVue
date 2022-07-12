@@ -1,9 +1,13 @@
 <template>
-    <img class="imagem-responsiva" :src="foto.url" :alt="foto.titulo" />
+    <img class="imagem-responsiva" :src="url" :alt="titulo" />
 
 </template>
 
-<script></script>
+<script>
+    export default{
+        props: ['url', 'titulo']
+    }
+</script>
 
 <style>
 
