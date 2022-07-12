@@ -1,6 +1,8 @@
 <template>
   <div class="corpo">
     <h1 class="centralizado">{{ titulo }}</h1>
+
+  <input type="search" v-on:input="" placeholder="Filtre por título" class="filtro">
     <ul class="lista-fotos">
       <li class="lista-fotos-item" v-for="foto of fotos">
         
@@ -21,11 +23,12 @@ export default {
   components:{
     'meu-painel' : Painel
   },
-  
+
   data() {
     return {
       titulo: 'AluraPic',
-      fotos: []
+      fotos: [],
+      filtro: ''
     }
   },
 
@@ -60,6 +63,11 @@ export default {
 
   .imagem-responsiva{
     width: 100%;
+  }
+
+  .filtro {
+    display: block;
+    width: 100%; 
   }
 
 </style>
