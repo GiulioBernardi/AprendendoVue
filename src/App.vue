@@ -14,6 +14,8 @@
 </template>
 
 <script>
+import Painel from './components/shared/painel/Painel.vue';
+
 export default {
   data() {
     return {
