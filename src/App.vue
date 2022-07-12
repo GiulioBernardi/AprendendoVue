@@ -17,6 +17,11 @@
 import Painel from './components/shared/painel/Painel.vue';
 
 export default {
+
+  components:{
+    'meu-painel' : Painel
+  },
+  
   data() {
     return {
       titulo: 'AluraPic',
