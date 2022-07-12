@@ -6,7 +6,7 @@
         <div class="painel">
           <h2 class="painel-titulo">{{ foto.titulo }}</h2>
           <div class="painel-conteudo">
-            <img :src="foto.url" :alt="foto.titulo" />
+            <img class="imagem-responsiva" :src="foto.url" :alt="foto.titulo" />
           </div>
         </div>
       </li>
@@ -50,6 +50,10 @@ export default {
 
   .lista-fotos .lista-fotos-item {
     display: inline-block;
+  }
+
+  .imagem-responsiva{
+    width: 100%;
   }
 
   /* estilo do painel */ 
