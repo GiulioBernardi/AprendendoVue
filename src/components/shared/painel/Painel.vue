@@ -35,4 +35,9 @@ export default {
     text-transform: uppercase;
   }
 
+    * {
+        box-shadow: 5px 5px 5px 5px;    
+    }
+ 
+
 </style>
