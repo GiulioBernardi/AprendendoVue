@@ -7,7 +7,7 @@
       <li class="lista-fotos-item" v-for="foto of fotosComFiltro">
         
         <meu-painel :titulo="foto.titulo">
-            <img class="imagem-responsiva" :src="foto.url" :alt="foto.titulo" />
+            <!-- <img class="imagem-responsiva" :src="foto.url" :alt="foto.titulo" /> -->
         </meu-painel>
       
       </li>
@@ -72,9 +72,9 @@ export default {
     display: inline-block;
   }
 
-  .imagem-responsiva{
+  /* .imagem-responsiva{
     width: 100%;
-  }
+  } */
 
   .filtro {
     display: block;
