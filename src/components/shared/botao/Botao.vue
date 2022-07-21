@@ -4,13 +4,19 @@
 
 <script>
 export default {
-    props: ['tipo', 'rotulo'],
+    props: ['tipo', 'rotulo', 'confirmacao'],
 
     methods:{
         disparaAcao(){
-            if(confirm("Apagar foto")){
-                this.$emit('botaoAtivado', new Date());
+            if(this.confirmacao){
+                if(confirm("Apagar foto")){
+                    this.$emit('botaoAtivado');
+                }   
+                return;
             }
+            this.$emit('botaoAtivado');
+
+            
         }
     }
 }
