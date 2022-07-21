@@ -1,6 +1,6 @@
 <template>
   <div class="corpo">
-    /* hora um, hora outro.
+    <router-view></router-view>
   </div>
 </template>
 
