@@ -14,7 +14,7 @@
                         rotulo="REMOVER" 
                         @botaoAtivado="remove(foto)"
                         :confirmacao="true"
-                        estilo="padrao"/>
+                        estilo="perigo"/>
                 
                 </meu-painel>
 
