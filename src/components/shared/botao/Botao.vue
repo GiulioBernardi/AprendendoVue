@@ -22,7 +22,7 @@ export default {
 
     computed: {
         estiloDoBotao(){
-            if(this.estilo == 'padrao'){
+            if(this.estilo == 'padrao' || !this.estilo){
                 return 'botao botao-padrao'
             }
             if(this.estilo == 'perigo'){
