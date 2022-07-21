@@ -1,10 +1,18 @@
 <template>
-    <button class="botao botao-perigo" :type="tipo">{{ rotulo }}</button>
+    <button @click="disparaAcao()" class="botao botao-perigo" :type="tipo">{{ rotulo }}</button>
 </template>
 
 <script>
 export default {
-    props: ['tipo', 'rotulo']
+    props: ['tipo', 'rotulo'],
+
+    methods:{
+        disparaAcao(){
+            if(confirm("Apagar foto")){
+                this.$emit('botaoAtivado', new Date());
+            }
+        }
+    }
 }
 </script>
 
@@ -15,6 +23,14 @@ export default {
         border-radius: 3px;
         margin: 10px;
         font-size: 1.2em;
+    }
+
+    .botao:hover{
+        background-color: brown;
+    }
+
+    .botao:active{
+        background-color: antiquewhite;
     }
 
     .botao-perigo {
